@@ -1,4 +1,3 @@
-
 local blu = "#c0d5d5"
 
 
@@ -29,7 +28,7 @@ minetest.register_tool("galvmith:mithril_sword", {
         full_punch_interval = 0.45,
         max_drop_level = 1,
         groupcaps = {
-            snappy = {times = {0.01, 0.07, 0.06}, uses = 200, maxlevel = 2},
+            snappy = {times = {0.01, 0.07, 0.06}, uses = 600, maxlevel = 2},
         },
         damage_groups = {fleshy = 9, burns = 0},
     },
@@ -44,7 +43,7 @@ minetest.register_tool("galvmith:mithril_sword", {
             full_punch_interval = 0.45,
             max_drop_level = 3,
             groupcaps={
-                cracky = {times = {[1] = 2.25, [2] = 0.55, [3] = 0.35}, uses = 200, maxlevel = 2},
+                cracky = {times = {[1] = 2.25, [2] = 0.55, [3] = 0.35}, uses = 600, maxlevel = 2},
              },
             damage_groups = {fleshy = 9, burns = 0},
         },
@@ -60,7 +59,7 @@ minetest.register_tool("galvmith:mithril_shovel", {
         full_punch_interval = 0.45,
         max_drop_level=1,
         groupcaps={
-            crumbly = {times = {[1] = 0.70, [2] = 0.35, [3] = 0.20}, uses = 200, maxlevel = 2},
+            crumbly = {times = {[1] = 0.70, [2] = 0.35, [3] = 0.20}, uses = 600, maxlevel = 2},
         },
         damage_groups = {fleshy=9}, 
     },
@@ -76,24 +75,9 @@ minetest.register_tool("galvmith:mithril_axe", {
         full_punch_interval = 0.45,
         max_drop_level = 10,
         groupcaps = {
-            choppy = {times = {[1] = 1.75, [2] = 0.45, [3] = 0.45}, uses = 200, maxlevel = 2},
+            choppy = {times = {[1] = 1.75, [2] = 0.45, [3] = 0.45}, uses = 600, maxlevel = 2},
         },
         damage_groups = {fleshy = 9, burns = 0},
-    },
-    sound = {breaks = "default_tool_breaks"},
-})
-
-
-minetest.register_tool("galvmith:mithril_hoe", {
-    description = minetest.colorize(blu,"Galvanized Mithril Hoe"),
-    inventory_image = "galvmith_mithril_hoe.png",
-
-    tool_capabilities = {
-        full_punch_interval = 1.0,
-        max_drop_level=1,
-        groupcaps={
-            uses = 1000},
-        },
     },
     sound = {breaks = "default_tool_breaks"},
 })
@@ -134,16 +118,6 @@ minetest.register_craft({
     recipe = {
         {"galvmith:mithril_ingot", "galvmith:mithril_ingot", ""},
         {"galvmith:mithril_ingot", "default:stick", ""},
-        {"", "default:stick", ""},
-    }
-})
-
-
-minetest.register_craft({
-    output = "galvmith:mithril_hoe",
-    recipe = {
-        {"galvmith:mithril_ingot", "galvmith:mithril_ingot", ""},
-        {"", "default:stick", ""},
         {"", "default:stick", ""},
     }
 })
@@ -228,35 +202,35 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("galvmith:helmet_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Helmet"),
 		inventory_image = "galvmith_inv_helmet_mithril.png",
-		groups = {armor_head=1, armor_heal=12, armor_use=100, armor_fire=5},
+		groups = {armor_head=1, armor_heal=15, armor_use=300, armor_fire=3},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:chestplate_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Chestplate"),
 		inventory_image = "galvmith_inv_chestplate_mithril.png",
-		groups = {armor_torso=1, armor_heal=12, armor_use=100, armor_fire=5},
+		groups = {armor_torso=1, armor_heal=15, armor_use=300, armor_fire=3},
 		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:leggings_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Leggings"),
 		inventory_image = "galvmith_inv_leggings_mithril.png",
-		groups = {armor_legs=1, armor_heal=12, armor_use=100, armor_fire=5},
+		groups = {armor_legs=1, armor_heal=15, armor_use=300, armor_fire=3},
 		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:boots_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Boots"),
 		inventory_image = "galvmith_inv_boots_mithril.png",
-		groups = {armor_feet=1, armor_heal=12, armor_use=100, armor_fire=5},
+		groups = {armor_feet=1, armor_heal=15, armor_use=300, armor_fire=3},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:shield_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Shield"),
 		inventory_image = "galvmith_inv_shield_mithril.png",
-		groups = {armor_shield=1, armor_heal=12, armor_use=100},
+		groups = {armor_shield=1, armor_heal=15, armor_use=300},
 		armor_groups = {fleshy=15},
 		damage_groups = {cracky=2, snappy=1, level=5},
 		reciprocate_damage = true,
