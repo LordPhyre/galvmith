@@ -204,36 +204,36 @@ if minetest.get_modpath("3d_armor") then
 	armor:register_armor("galvmith:helmet_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Helmet"),
 		inventory_image = "galvmith_inv_helmet_mithril.png",
-		groups = {armor_head=20, armor_heal=12, armor_use=500, armor_fire=3},
-		armor_groups = {fleshy=15},
+		groups = {armor_head=21, armor_heal=12, armor_use=500, armor_fire=3},
+		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:chestplate_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Chestplate"),
 		inventory_image = "galvmith_inv_chestplate_mithril.png",
-		groups = {armor_torso=20, armor_heal=12, armor_use=500, armor_fire=3},
+		groups = {armor_torso=21, armor_heal=12, armor_use=500, armor_fire=3},
 		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:leggings_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Leggings"),
 		inventory_image = "galvmith_inv_leggings_mithril.png",
-		groups = {armor_legs=20, armor_heal=12, armor_use=500, armor_fire=3},
+		groups = {armor_legs=21, armor_heal=12, armor_use=500, armor_fire=3},
 		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:boots_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Boots"),
 		inventory_image = "galvmith_inv_boots_mithril.png",
-		groups = {armor_feet=20, armor_heal=12, armor_use=500, armor_fire=3},
-		armor_groups = {fleshy=15},
+		groups = {armor_feet=21, armor_heal=12, armor_use=500, armor_fire=3},
+		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 	})
 	armor:register_armor("galvmith:shield_mithril", {
 		description = minetest.colorize(blu, "Galvanized Mithril Shield"),
 		inventory_image = "galvmith_inv_shield_mithril.png",
-		groups = {armor_shield=20, armor_heal=12, armor_use=500},
-		armor_groups = {fleshy=15},
+		groups = {armor_shield=21, armor_heal=12, armor_use=500},
+		armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=5},
 		reciprocate_damage = true,
 	})
