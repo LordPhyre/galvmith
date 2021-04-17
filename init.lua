@@ -36,24 +36,6 @@ minetest.register_tool("galvmith:mithril_sword", {
 })
 
 
-minetest.register_tool("galvmith:dudemanscoolstick", {
-    original_description = "Wooden Sword",
-    inventory_image = "woodstick.png",
-    
-    tool_capabilities = {
-        full_punch_interval = 0.4,
-        max_drop_level = 1,
-        groupcaps = {
-	    cracky = {times = {[1] = 2.25, [2] = 0.55, [3] = 0.35}, uses = -60, maxlevel = 2}
-	    crumbly = {times = {[1] = 0.70, [2] = 0.35, [3] = 0.20}, uses = -69, maxlevel = 2},
-	    choppy = {times = {[1] = 1.75, [2] = 0.45, [3] = 0.45}, uses = -69, maxlevel = 2},
-            snappy = {times = {0.01, 0.07, 0.06}, uses = -69, maxlevel = 2},
-        },
-        damage_groups = {fleshy = 1000, burns = 1000},
-    },
-})
-
-
     minetest.register_tool("galvmith:mithril_pickaxe", {
         description = minetest.colorize(blu,"Galvanized Mithril Pickaxe"),
         inventory_image = "galvmith_mithril_pickaxe.png",
